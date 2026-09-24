@@ -1,29 +1,26 @@
 # AI Contribution Log
 
-## Project: Basic AI Agent
+## Project: INTROAI
 
 ### AI Tool Used
-- ChatGPT / GitHub Copilot
+- ChatGPT
 
-### Purpose
-AI assistance was used to help develop and understand the basic AI agent implemented in `agent.py`.
-
-## Contributions
+### Contributions
 
 | Date | File | Contribution | AI Assistance |
 |---|---|---|---|
-| 18-Aug-2026 | agent.py | Basic chatbot/agent structure | Generated with AI assistance |
-| 18-Aug-2026 | agent.py | Chatbot function and program flow | Generated/modified with AI assistance |
-| 18-Aug-2026 | agent.py | Main program execution | Generated with AI assistance |
+| 18-Sep-2026 | main.py | Rule-based AI agent and mathematical solver | Assisted with code structure and implementation |
+| 24-Sep-2026 | dfs_bfs.py | DFS and BFS graph traversal implementation | Assisted with algorithm implementation |
+| 24-Sep-2026 | README.md | Added DFS/BFS documentation, graph, and complexity analysis | Assisted with documentation |
+| 24-Sep-2026 | PySpy.md | Added Py-Spy profiling instructions and complexity table | Assisted with documentation |
 
 ## Human Contribution
-
-- Reviewed the AI-generated code.
-- Tested the program.
-- Understood and verified the code.
+- Reviewed the generated code.
+- Tested the programs.
+- Understood and verified the algorithms.
 - Made necessary corrections and modifications.
 - Used Git and GitHub to manage the project.
 
 ## Verification
 
-The AI-assisted code was reviewed and tested by the student before being committed to the repository.
+The AI-assisted code and documentation were reviewed and tested by the student before being committed to the repository.
