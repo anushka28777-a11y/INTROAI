@@ -36,9 +36,17 @@ def bfs(graph, start):
 print("DFS Traversal:")
 dfs(graph, "A")
 
-print("\nBFS Traversal:")
+print("\n\nBFS Traversal:")
 bfs(graph, "A")
 
-print("\n\nComplexity:")
-print("DFS - Best: O(V + E), Average: O(V + E), Worst: O(V + E)")
-print("BFS - Best: O(V + E), Average: O(V + E), Worst: O(V + E)")
+print("\n\nTime Complexity:")
+print("----------------")
+print("DFS:")
+print("  Best Case    : O(V + E)")
+print("  Average Case : O(V + E)")
+print("  Worst Case   : O(V + E)")
+
+print("\nBFS:")
+print("  Best Case    : O(V + E)")
+print("  Average Case : O(V + E)")
+print("  Worst Case   : O(V + E)")
