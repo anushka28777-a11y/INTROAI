@@ -1,157 +1,88 @@
-#  INTROAI — Simple AI Agent
+# INTROAI — AI Agent and Graph Traversal
 
-A beginner-friendly **rule-based AI agent** developed as part of the **AI-Augmented Workflow assignment (Week 1–3 deliverable)**.
+A beginner-friendly Python project containing a rule-based AI agent and graph traversal implementations for DFS and BFS.
 
-INTROAI is a lightweight command-line chatbot that can understand a few basic conversational commands and solve simple mathematical expressions safely without using `eval()`.
+## Features
+- Rule-based chatbot
+- Safe mathematical expression solver
+- DFS graph traversal
+- BFS graph traversal
+- Best, average, and worst-case complexity analysis
+- Py-Spy profiling instructions
+- GitHub contribution tracking
 
-##  Features
+## Project Structure
 
-* Responds to greetings such as `hello` and `hi`
-*  Identifies itself when asked about its name
-*  Provides basic help
-*  Solves simple mathematical expressions
-*  Addition
-*  Subtraction
-*  Multiplication
-*  Division
-*  Power operations using `^` and `**`
-*  Handles division-by-zero errors
-*  Uses safe operator functions instead of `eval()`
-*  Exits when the user enters `bye`
+    INTROAI/
+    ├── main.py
+    ├── dfs_bfs.py
+    ├── README.md
+    ├── ContributionLog.md
+    ├── PySpy.md
+    ├── requirements.txt
+    ├── .gitignore
+    └── LICENSE
 
-##  Example
+## DFS and BFS Graph
 
-```text
-Simple AI Agent (now with math!)
-Try things like: 5 + 3, 12 * 7, 9 / 2, 2 ^ 10
-Type 'bye' to exit.
-
-You: hello
-Agent: Hello! Nice to meet you.
-
-You: 5 + 3
-Agent: 5 + 3 = 8
-
-You: 12 * 7
-Agent: 12 * 7 = 84
-
-You: 2 ^ 10
-Agent: 2 ^ 10 = 1024
-
-You: bye
-Agent: Goodbye!
+```mermaid
+graph TD
+    A --> B
+    A --> C
+    B --> D
+    B --> E
+    C --> F
+    E --> F
 ```
 
-##  Technologies Used
+## Traversal Output
 
-* **Python 3**
-* `re` — pattern matching for mathematical expressions
-* `operator` — safe mathematical operations
+    DFS Traversal:
+    A B D E F C
 
-No external Python libraries are required.
+    BFS Traversal:
+    A B C D E F
 
-##  Project Structure
+## Complexity Analysis
 
-```text
-INTROAI/
-│
-├── main.py
-├── README.md
-├── ContributionLog.md
-├── requirements.txt
-├── .gitignore
-└── LICENSE
-```
+For an adjacency-list graph, both DFS and BFS visit vertices and edges at most once.
 
-### `main.py`
+| Algorithm | Best Case | Average Case | Worst Case |
+|---|---|---|---|
+| DFS | O(V + E) | O(V + E) | O(V + E) |
+| BFS | O(V + E) | O(V + E) | O(V + E) |
 
-Contains the complete AI agent, including:
+Where:
+- `V` = number of vertices
+- `E` = number of edges
 
-* Chatbot interaction
-* User input handling
-* Mathematical expression detection
-* Mathematical calculation
-* Error handling
+## Py-Spy
 
-### `ContributionLog.md`
+See [PySpy.md](PySpy.md) for profiling commands.
 
-Contains the development/contribution record for the project.
+## How to Run
 
-##  How to Run
+    python main.py
+    python dfs_bfs.py
 
-### 1. Clone the repository
+## Technologies Used
+- Python 3
+- Regular expressions
+- Operator module
+- Collections deque
+- Git and GitHub
+- Py-Spy
 
-```bash
-git clone https://github.com/anushka28777-a11y/INTROAI.git
-```
+## Project Objective
 
-### 2. Open the project directory
+The project demonstrates basic AI-agent programming along with fundamental graph traversal algorithms and performance profiling.
 
-```bash
-cd INTROAI
-```
-
-### 3. Run the agent
-
-```bash
-python main.py
-```
-
-##  Supported Commands
-
-| Input    | Agent Response                 |
-| -------- | ------------------------------ |
-| `hello`  | Greeting                       |
-| `hi`     | Greeting                       |
-| `name`   | Information about the agent    |
-| `help`   | List of supported interactions |
-| `5 + 3`  | `5 + 3 = 8`                    |
-| `12 * 7` | `12 * 7 = 84`                  |
-| `9 / 2`  | `9 / 2 = 4.5`                  |
-| `2 ^ 10` | `2 ^ 10 = 1024`                |
-| `bye`    | Exits the agent                |
-
-##  Safety
-
-The mathematical solver intentionally avoids Python's `eval()` function for processing user input.
-
-Instead, supported operators are mapped to functions from Python's built-in `operator` module.
-
-This limits calculations to the operations explicitly supported by the agent.
-
-##  Project Objective
-
-The objective of this project is to demonstrate the development of a simple AI-style conversational agent with basic natural-language pattern recognition and mathematical problem-solving capabilities.
-
-The project also demonstrates fundamental concepts such as:
-
-* Conditional logic
-* Regular expressions
-* Functions
-* Dictionaries
-* Exception handling
-* User input processing
-* Safe mathematical operations
-
-##  Future Improvements
-
-Possible future versions could include:
-
-* More natural-language understanding
-* Support for multi-step calculations
-* More conversational responses
-* Memory of previous interactions
-* Additional mathematical functions
-* A graphical or web interface
-* Integration with a modern LLM/API
-* Voice input and output
-
-##  Author
+## Author
 
 **Anushka**
 
 GitHub: `anushka28777-a11y`
 
-##  License
+## License
 
 This project is intended for educational and learning purposes.
